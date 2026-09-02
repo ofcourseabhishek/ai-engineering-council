@@ -1,0 +1,15 @@
+mode: full
+external_reviewers:
+  - claude-web
+  - grok-web
+  - gemini-web
+rules:
+  no_paid_model_apis: true
+  anonymize_cross_critique: true
+  require_decision_before_implementation: true
+  require_post_implementation_review: true
+  minimum_external_reviewers_full_mode: 2
+privacy:
+  minimize_shared_context: true
+  redact_secrets: true
+  share_entire_repository: false
